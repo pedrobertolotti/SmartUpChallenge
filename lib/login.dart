@@ -170,16 +170,15 @@ class _LoginPageState extends State<LoginPage> {
                             style: TextStyle(color: Colors.white),
                           ),
                           onPressed: () {
-                            checkUsernameExists(username).then((exists) {
-                              if (exists) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => PasswordPage(),
-                                  ),
-                                );
-                              }
-                            });
+                            // chequeo que exista el usuario para poder entrar
+                            // checkUsernameExists(username).then((exists) {
+                            // if (exists) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => PasswordPage(),
+                              ),
+                            );
                           },
                         ),
                       ),

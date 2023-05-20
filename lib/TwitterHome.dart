@@ -244,7 +244,7 @@ class _TwitterHomeState extends State<TwitterHome> {
         right: 20.0,
         child: FloatingActionButton(
           onPressed: () {
-            twitteando = true;
+            twitteando = !twitteando;
             // Acción del botón
           },
           child: Icon(Icons.edit),
