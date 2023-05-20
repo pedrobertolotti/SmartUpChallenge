@@ -9,6 +9,7 @@ class TwitterHome extends StatefulWidget {
 }
 
 class _TwitterHomeState extends State<TwitterHome> {
+  bool twitteando = false;
   int actualelegido = 0;
   List<Tweet> _tweets = [
     Tweet(
@@ -243,6 +244,7 @@ class _TwitterHomeState extends State<TwitterHome> {
         right: 20.0,
         child: FloatingActionButton(
           onPressed: () {
+            twitteando = true;
             // Acción del botón
           },
           child: Icon(Icons.edit),
